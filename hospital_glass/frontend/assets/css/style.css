@@ -1,0 +1,70 @@
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(135deg,#e0f7ff 0%, #f5e6ff 100%);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* glass card */
+.glass-card{
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px) saturate(140%);
+  -webkit-backdrop-filter: blur(8px) saturate(140%);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 14px;
+  padding:20px;
+  box-shadow: 0 8px 30px rgba(31,38,135,0.1);
+}
+
+/* hero */
+.hero{width:100%;padding:50px}
+.hero-card{max-width:720px;margin:0 auto;text-align:center}
+.hero-card h1{font-size:32px;color:#05386B;margin-bottom:8px}
+.hero-card p{color:#055160;margin-bottom:18px}
+
+/* buttons */
+.btn{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:10px;
+  text-decoration:none;
+  background: linear-gradient(90deg,#0ea5e9,#7c3aed);
+  color:white;
+  font-weight:600;
+  margin:6px;
+}
+.btn.outline{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.5);
+  color:#05386B;
+}
+.btn.small{padding:6px 10px;font-size:13px}
+
+/* container and tables */
+.container{max-width:1000px;margin:30px auto}
+.top-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.dashboard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.card{padding:18px;border-radius:12px;text-align:center}
+.card h4{margin-bottom:8px}
+.table-responsive{overflow:auto}
+table{width:100%;border-collapse:collapse;margin-top:14px}
+th,td{padding:10px;border-bottom:1px solid rgba(0,0,0,0.05);text-align:left}
+
+/* forms */
+.auth-card{max-width:420px;margin:60px auto;padding:24px}
+.auth-card input, .auth-card select, .auth-card textarea{
+  width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(0,0,0,0.08)
+}
+.form-inline{display:flex;gap:8px}
+.error{color:#b00020}
+.success{color:#0a7a00}
+
+/* responsive */
+@media (max-width:600px){
+  .hero-card h1{font-size:22px}
+  .container{padding:12px}
+}
